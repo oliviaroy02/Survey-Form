@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.jss"></script>
+    <div>
+    <h1 id="title"> Intern Assignment Survey Form</h1>
+    <p id="description">Just take out a few seconds to answer our questions, and win exciting rewards!</p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label id="email-label">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label">Age:</label>
+      <input id="number" name="age" type="number" placeholder="Enter your age" min="13" max="100">
+      <label for="ph">Contact Number:</label>
+      <input type="tel" id="ph" name="ph" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+      <label class="option1">What is your current role?
+        <select id="dropdown">
+          <option value="">Select your current position</option>
+          <option value="1">Student</option>
+          <option value="2">Part-Time Job</option>
+          <option value="3">Full-Time Job</option>
+          <option value="4">Searching for job</option>
+          <option value="5">Unemployed</option>
+          <option value="6">Prefer not to say</option>
+          </select></label>
+          <label id="top">Have you tried any of our products?</label>
+          <label><input type="radio" name="tried" class="inline">Yes</label>
+          <label><input type="radio" name="tried" class="inline">No</label>
+          <label id="top">If yes, select the products that you have tried:</label>
+          <label><input type="checkbox" name="prod" value="cell" class="inline">Cellphones</label>
+          <label><input type="checkbox" name="prod" value="lap" class="inline">Laptops</label>
+          <label><input type="checkbox" name="prod" value="tab" class="inline">Tablets</label>
+          <label><input type="checkbox" name="prod" value="head" class="inline">Wireless Headphones</label>
+          <label><input type="checkbox" name="prod" value="ear" class="inline">Earphones</label>
+          <label><input type="checkbox" name="prod" value="power" class="inline">Powerbanks</label>
+          <label id="top">What are the latest products you' ve purchased from us?</label>
+          <textarea name="prod" id="prod" cols="30" rows="2" id="comm"></textarea>
+          <label class="opt2" id="top">Would you recommend us to a friend?</label>
+         <label><input type="radio" name="recommend" class="inline">Yes</label>
+        <label><input type="radio" name="recommend" class="inline">Maybe</label>
+        <label><input type="radio" name="recommend" class="inline">No</label>
+          <label class="any" id="top">Any comments or suggestions?</label>
+          <textarea placeholder="Enter your comments here...." rows="2" cols="30" name="comments" id="comm"></textarea>
+          <em><input type="submit" value="SUBMIT" id="submit" ></em> 
+    </form>
+    </div>
+</body>
+</html>
